@@ -56,6 +56,10 @@ const homelist = (req, res) => {
     }
   };
   request(requestOptions, (err, response, body) => {
+    console.log('API URL:', requestOptions.url);
+    console.log('API error:', err);
+    console.log('API status:', response?.statusCode);
+    console.log('API body:', body);
     let data = [];
     if (response.statusCode === 200 && body.length) {
       data = body.map( (item) => {
