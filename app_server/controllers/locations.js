@@ -4,7 +4,7 @@ const apiOptions = {
   server: 'http://localhost:3000'
 };
 if (process.env.NODE_ENV === 'production') {
-  apiOptions.server = 'http://yourapi.com';
+  apiOptions.server = 'https://loc8r-api-y1di.onrender.com';
 }
 
 const formatDistance = (distance) => {
